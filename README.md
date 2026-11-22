@@ -8,8 +8,10 @@
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-online-4de2d0?style=flat-square)](https://ottowiki.github.io/jijiguo-personality-index/)
 [![Vanilla JS](https://img.shields.io/badge/Vanilla-JS-f7df1e?style=flat-square)](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript)
 [![License: MIT](https://img.shields.io/badge/code-MIT-3da639?style=flat-square)](LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/OTTOWiki/jijiguo-personality-index?style=flat-square&label=Star)](https://github.com/OTTOWiki/jijiguo-personality-index/stargazers)
+[![GitHub release](https://img.shields.io/github/v/release/OTTOWiki/jijiguo-personality-index?style=flat-square)](https://github.com/OTTOWiki/jijiguo-personality-index/releases)
 
-**在线试玩：<https://ottowiki.github.io/jijiguo-personality-index/>**
+**在线试玩：<https://ottowiki.github.io/jijiguo-personality-index/>** · **如果觉得有意思，欢迎点一个 ⭐ Star，或把链接甩给群友。**
 
 ![吉吉国人格图鉴](assets/og-cover.png)
 
