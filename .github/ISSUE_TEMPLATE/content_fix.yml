@@ -1,0 +1,33 @@
+name: 📚 考据勘误 / 人物资料补充
+description: 发现人物信息、时间线、语录或来源有误
+title: "[考据] "
+labels: ["research"]
+body:
+  - type: input
+    id: person
+    attributes:
+      label: 涉及人物
+      placeholder: 侯国玉 / 山泥若 / 炫神 / 棍母 / DJGun / Karasu / 沈阳美食家
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: 需要更正 / 补充的内容
+      description: 请写清楚原文、你认为正确的说法，以及证据。
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: 来源链接
+      description: 优先使用正规媒体、法院/平台公告、百科或可查证的一手页面；社区说法请注明。
+    validations:
+      required: true
+  - type: checkboxes
+    id: ethics
+    attributes:
+      label: 伦理确认
+      options:
+        - label: 我确认内容不涉及骚扰真实素人、不美化赌博/网暴/地域黑，也不包含未公开的个人隐私
+          required: true

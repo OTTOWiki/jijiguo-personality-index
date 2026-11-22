@@ -1,0 +1,21 @@
+{
+  "name": "jijiguo-personality-index",
+  "version": "1.1.0",
+  "private": true,
+  "description": "吉吉国人格图鉴：电棍 OTTO 亚文化圈趣味人格测试（Vanilla JS，无依赖）",
+  "homepage": "https://ottowiki.github.io/jijiguo-personality-index/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OTTOWiki/jijiguo-personality-index.git"
+  },
+  "bugs": {
+    "url": "https://github.com/OTTOWiki/jijiguo-personality-index/issues"
+  },
+  "scripts": {
+    "start": "python3 -m http.server 4173 --bind 127.0.0.1",
+    "check": "node tools/check.mjs",
+    "assets": "python3 tools/gen-assets.py"
+  },
+  "keywords": ["quiz", "personality", "vanilla-js", "otto", "dian-gun", "jijiguo", "subculture", "github-pages"],
+  "license": "MIT"
+}

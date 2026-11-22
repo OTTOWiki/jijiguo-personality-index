@@ -1,0 +1,17 @@
+name: ✨ 题目 / 功能建议
+description: 想加题、改计分、换 UI、做新玩法
+title: "[建议] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: 你的想法
+      placeholder: 想解决什么问题？大概怎么做？
+    validations:
+      required: true
+  - type: textarea
+    id: sample
+    attributes:
+      label: 示例（可选）
+      placeholder: 题目文案、选项权重、交互草图都可以

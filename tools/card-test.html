@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><title>人格卡预览</title></head>
+<body style="margin:0;background:#000">
+<canvas id="share-canvas" width="1080" height="1440"></canvas>
+<script src="../js/lib/util.js"></script>
+<script src="../js/data/personas.js"></script>
+<script src="../js/share.js"></script>
+<script>
+  var params = new URLSearchParams(location.search);
+  var pid = params.get('p') || 'karasu';
+  var p = OTTOQUIZ.PERSONA_BY_ID[pid] || OTTOQUIZ.PERSONA_BY_ID['karasu'];
+  var order = ['otto', 'shanniruo', 'xuan', 'gunmu', 'djgun', 'karasu', 'shenyang'];
+  var idx = order.indexOf(p.id);
+  var pick = function (n) { return OTTOQUIZ.PERSONA_BY_ID[order[(idx + n) % order.length]]; };
+  var result = {
+    versionId: 'standard', total: 85, tier: '灵魂共振',
+    personality: p,
+    top: { id: p.id, pct: 88 },
+    second: { id: pick(1).id, pct: 73 },
+    third: { id: pick(2).id, pct: 60 },
+    lowest: { id: pick(3).id, pct: 41 },
+    combo: { name: 'Kdk 电台', desc: '' }
+  };
+  var dataUrl = OTTOQUIZ.share.drawCard(result);
+  var img = new Image();
+  img.src = dataUrl;
+  img.style.cssText = 'display:block;width:1080px;height:1440px';
+  document.body.innerHTML = '';
+  document.body.appendChild(img);
+  document.title = '人格卡预览';
+</script>
+</body>
+</html>

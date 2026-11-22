@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 💬 线上站点
+    url: https://ottowiki.github.io/jijiguo-personality-index/
+    about: 先在线试玩一遍，确认是不是已经修好了
+  - name: 📖 考据说明
+    url: https://ottowiki.github.io/jijiguo-personality-index/#/about
+    about: 站点的考据方法、来源与伦理说明
